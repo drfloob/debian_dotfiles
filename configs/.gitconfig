@@ -1,0 +1,17 @@
+[alias]
+st = status
+co = checkout
+hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+lg = log --graph --all --decorate
+
+[user]
+name = aj heller
+email = aj@drfloob.com
+
+[color]
+ui = always
+#diff = always
+#status = always
+
+[color "diff"]
+    commit = green
