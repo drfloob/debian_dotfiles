@@ -1,11 +1,15 @@
 my debian linux dotfiles.
 
-## Usage
+
+Usage
+=====
 
 ./collect.sh: gathers the usual dotfiles from their resting places.
 
 ./deploy.sh: puts dotfiles where they're normally found.
 
-## Featured Configs
+
+Featured Configs
+================
 
 emacs, xmonad, xmobar, a few fonts, Xresources, xsession/xinitrc
