@@ -2,47 +2,48 @@
 
 pushd `dirname $0` > /dev/null
 CONFIGS=`pwd`/configs
-# echo $CONFIGS;
-# exit;
 popd > /dev/null
 
-cd;
+SOURCEDIR=$HOME;
+DESTDIR=$CONFIGS;
+
+cd $SOURCEDIR;
 
 ## single config files
 cp .gitconfig .bash_aliases .bashrc .xmobarrc .xsession .Xresources \
-$CONFIGS
+$DESTDIR
 
 ## my scripts
-if [ ! -d $CONFIGS/bin ]; then
-    mkdir $CONFIGS/bin
+if [ ! -d $DESTDIR/bin ]; then
+    mkdir $DESTDIR/bin
 fi
-cd bin
+cd $SOURCEDIR/bin
 cp kill_powersave.sh kill_repeat.sh myaudioproxy.sh toggle_qwerty.sh toggle_redshift.sh toggle_VGA1.sh \
-$CONFIGS/bin
-cd
+$DESTDIR/bin
+cd $SOURCEDIR;
 
 
 ## xmonad
-if [ ! -d $CONFIGS/.xmonad ]; then
-    mkdir $CONFIGS/.xmonad
+if [ ! -d $DESTDIR/.xmonad ]; then
+    mkdir $DESTDIR/.xmonad
 fi
 cp .xmonad/xmonad.hs \
-$CONFIGS/.xmonad/
+$DESTDIR/.xmonad/
 
 
 ## emacs
-if [ ! -d $CONFIGS/.emacs.d ]; then
-    mkdir $CONFIGS/.emacs.d
+if [ ! -d $DESTDIR/.emacs.d ]; then
+    mkdir $DESTDIR/.emacs.d
 fi
 cp .emacs.d/init.el \
-$CONFIGS/.emacs.d/
+$DESTDIR/.emacs.d/
 cp -r .emacs.d/site-packages \
-$CONFIGS/.emacs.d/
+$DESTDIR/.emacs.d/
 
 
 ## fonts
 cp -r .fonts \
-$CONFIGS/
+$DESTDIR/
 
 
 
