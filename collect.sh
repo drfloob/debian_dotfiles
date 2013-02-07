@@ -12,6 +12,16 @@ cd;
 cp .gitconfig .bash_aliases .bashrc .xmobarrc .xsession .Xresources \
 $CONFIGS
 
+## my scripts
+if [ ! -d $CONFIGS/bin ]; then
+    mkdir $CONFIGS/bin
+fi
+cd bin
+cp kill_powersave.sh kill_repeat.sh myaudioproxy.sh toggle_qwerty.sh toggle_redshift.sh toggle_VGA1.sh \
+$CONFIGS/bin
+cd
+
+
 ## xmonad
 if [ ! -d $CONFIGS/.xmonad ]; then
     mkdir $CONFIGS/.xmonad
