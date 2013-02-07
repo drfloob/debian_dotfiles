@@ -2,3 +2,4 @@
 
 . move.sh
 move $CONFIGS $HOME
+

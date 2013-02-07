@@ -19,12 +19,12 @@ function move {
     cp .gitconfig .bash_aliases .bashrc .xmobarrc .Xresources \
 	$DESTDIR
 
-## my scripts
+## my ~/bin scripts
     if [ ! -d $DESTDIR/bin ]; then
 	mkdir $DESTDIR/bin
     fi
     cd $SOURCEDIR/bin
-    cp kill_powersave.sh kill_repeat.sh myaudioproxy.sh toggle_qwerty.sh toggle_redshift.sh toggle_VGA1.sh \
+    cp kill_powersave.sh kill_repeat.sh myaudioproxy.sh toggle_qwerty.sh toggle_redshift.sh toggle_VGA1.sh kerl \
 	$DESTDIR/bin
     cd $SOURCEDIR;
 
