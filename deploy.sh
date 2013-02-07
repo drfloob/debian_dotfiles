@@ -10,7 +10,7 @@ DESTDIR=$HOME;
 cd $SOURCEDIR;
 
 ## single config files
-cp .gitconfig .bash_aliases .bashrc .xmobarrc .xsession .Xresources \
+cp .gitconfig .bash_aliases .bashrc .xmobarrc .Xresources \
 $DESTDIR
 
 ## my scripts
